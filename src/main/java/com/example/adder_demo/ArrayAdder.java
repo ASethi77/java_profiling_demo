@@ -85,9 +85,9 @@ class ArrayAdder extends RecursiveTask<Integer>
 
     @Override
     protected Integer compute() {
-        // shortBusyLoop();
         Integer sum = calculateSum();
-        // longBusyLoop();
+        shortBusyLoop();
+        longBusyLoop();
         return sum;
     }
 }
